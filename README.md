@@ -52,14 +52,15 @@ If the date is invalid, it returns:
 }
 ```
 
-###Setup and Installation
-Prerequisites
+## Setup and Installation
+
+### Prerequisites
+
 Node.js
 npm
-Installation
-Clone the repository:
 
-```json
+### Installation
+Clone the repository:
 git clone https://github.com/O-BERNARDOFOEGBU/Simple-Timestamp-Microservice/
 cd timestamp-microservice
 Install the dependencies:
@@ -67,7 +68,7 @@ npm install
 Start the server:
 npm start
 The server will start on port 3000 by default.
-```
+
 
 ###Examples
 
@@ -102,7 +103,7 @@ Response:
 
 ```json
 {
-"unix": <current_unix_timestamp>,
+"UNIX": "<current_unix_timestamp>",
 "utc": "<current_utc_date_string>"
 }
 ```
