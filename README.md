@@ -37,86 +37,91 @@ To use the microservice, you can make GET requests to the specified API endpoint
 
 The API returns a JSON object with the following structure:
 
-````json
+```json
 {
   "unix": <timestamp>,
   "utc": "<date_string>"
 }
+```
 
 If the date is invalid, it returns:
+
 ```json
 {
   "error": "Invalid Date"
 }
-Setup and Installation
+```
+
+###Setup and Installation
 Prerequisites
 Node.js
 npm
 Installation
 Clone the repository:
 
-bash
-Copy code
+```json
 git clone https://github.com/O-BERNARDOFOEGBU/Simple-Timestamp-Microservice/
 cd timestamp-microservice
 Install the dependencies:
-
-bash
-Copy code
 npm install
 Start the server:
-
-bash
-Copy code
 npm start
 The server will start on port 3000 by default.
+```
 
-Examples
+###Examples
+
 Valid Date String
 Request: GET /api/2015-12-25
 
 Response:
 
-
+```json
 {
   "unix": 1451001600000,
   "utc": "Fri, 25 Dec 2015 00:00:00 GMT"
 }
+```
+
 Valid Unix Timestamp
 Request: GET /api/1451001600000
 
 Response:
 
-
+```json
 {
   "unix": 1451001600000,
   "utc": "Fri, 25 Dec 2015 00:00:00 GMT"
 }
+```
+
 Current Date
 Request: GET /api
 
 Response:
 
+```json
 {
-  "unix": <current_unix_timestamp>,
-  "utc": "<current_utc_date_string>"
+"unix": <current_unix_timestamp>,
+"utc": "<current_utc_date_string>"
 }
+```
 
 Invalid Date
 Request: GET /api/invalid-date
 
 Response:
 
-
+```json
 {
   "error": "Invalid Date"
 }
+```
 
 ## Technologies Used
+
 Node.js
 Express
 Cors
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-````
