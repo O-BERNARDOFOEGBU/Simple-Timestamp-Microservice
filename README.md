@@ -39,7 +39,7 @@ The API returns a JSON object with the following structure:
 
 ```json
 {
-  "unix": <timestamp>,
+  "UNIX": "<timestamp>",
   "utc": "<date_string>"
 }
 ```
